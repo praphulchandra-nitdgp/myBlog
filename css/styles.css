@@ -226,7 +226,7 @@ main .site-content .post-content > .post-image,.post-title{
 
 }
 main .site-content .post-content > .post-image, .post-title{
-    background: transparent;
+    background: var(--sky);
     padding: 1rem;
     position: absolute;
     bottom: 0%;
