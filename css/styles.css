@@ -237,7 +237,7 @@ main .site-content > .post-image > div{
     overflow: hidden;
 }
 main .site-content .post-content > .post-image .img{
-    width: 100%;
+    width: 90%;
 }
 main .site-content .post-content > .post-image .post-info span{
     margin: 0.5rem;
