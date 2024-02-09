@@ -13,17 +13,17 @@ html,body{
     /*   theme colors   */
     --text-gray: #100007;
     --text-light: #686666da;
-    --back-color: #0f0f0f;
+    --bg-color: #0f0f0f;
     --midnight:#052869;
     /*gradient color*/
-    --sky: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    --sky: linear-gradient(120deg, #4facfe 0%, #00f2fe 100%);
 
     /*   theme font-families    */
-    --Abel: 'Abel',cursive;
-    --Josefin: 'Josefin_Sans',cursive;
-    --Lilita: 'Lilita_One',cursive;
-    --Protest: 'Protest_Guerilla',cursive;
-    --sansita: 'sansita',cursive;
+    --Abel: 'Abel', cursive;
+    --Josefin: 'Josefin_Sans', cursive;
+    --Lilita: 'Lilita_One', cursive;
+    --Protest: 'Protest_Guerilla', cursive;
+    --sansita: 'sansita', cursive;
 }
 /*----------global classes--------*/
 a{
@@ -93,12 +93,12 @@ p{
     cursor: pointer;
     display: none;
 }
-.nav .toggle-collapse .toggle.icons{
+.nav .toggle-collapse .toggle-icons{
     display:flex;
     justify-content: flex-end;
     padding:1.7rem 0;
 }
-.nav .toggle-collapse .toggle.icons i{
+.nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
 }
@@ -148,7 +148,7 @@ p{
 /*-------- Site title --------*/
 
 main .site-title{
-    background: url('../assets/Background-image.png');
+    background: url('../assets/background.jpg');
     background-size: cover;
     height: 110vh;
     display: flex;
