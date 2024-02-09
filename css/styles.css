@@ -242,14 +242,14 @@ main .site-content .post-content > .post-image .img{
 main .site-content .post-content > .post-image .post-info span{
     margin: 0.5rem;
 }
-main .psot-content .post-title a{
+main .post-content .post-title a{
     font-family: var(--Lilita);
     font-size: 1.5rem;
 }
 .site-content .post-content .post-title .post-btn{
     border-radius: 0;
     padding: .7rem 1.5rem;
-    background: skyblue;
+    background: var(--sky);
 }
 
 /*-- -----site content----- --*/
@@ -293,18 +293,15 @@ main .psot-content .post-title a{
 }
 
 .site-content .sidebar .popular-tags{
-    padding: 4rem 0;
+    padding: 5rem 0;
 
 }
 .site-content .sidebar .popular-tags .tags .tag{
     background: var(--sky);
-    padding: 4rem 1rem;
+    padding: .4rem 1rem;
     border-radius: 3rem;
-    margin: 4rem .6rem;
+    margin: .4rem .6rem;
 }
-
-
-
 
 
 /*-- -------side bar-------- --*/
@@ -315,7 +312,8 @@ main .psot-content .post-title a{
 /*-- -------------- Footer--------------- --*/
 footer.footer{
     height: 100%;
-    background: var(--back-color);
+    background: var(--bg-color);
+    postion: relative;
 }
 footer.footer .container{
     display: grid;
@@ -336,7 +334,7 @@ footer.footer .newsletter .form-element{
 }
 
 footer.footer .newsletter .form-element input{
-    padding: 5rem .7rem;
+    padding: .5rem .7rem;
     border: none;
     background: transparent;
     color: white;
@@ -350,7 +348,47 @@ footer.footer .newsletter .form-element span{
     cursor: pointer;
 
 }
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+
 /*-- -----------x--- Footer---x------------ --*/
+
+/*-- --------- Viewport less then or equal to 1130px ---------- --*/
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: 50% 50%;
+    }
+
+}
 
 /*  x  viewport <= 750px v   x  */
 @media only screen and (max-width: 750px){
@@ -360,6 +398,40 @@ footer.footer .newsletter .form-element span{
     .nav .toggle-collapse{
         display: initial;
     }
+     main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: 100%;
+    }
 }
 
-/*  x  viewport <= 750px v   x  */
+/*-- -------x--- viewport <= 750px v ---x--------- */
+/*-- --------- Viewport less then or equal to 520px ---------- --*/
+
+@media only screen and (max-width: 520px){
+    main .blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+}
+
+/*-- -------x--- Viewport less then or equal to 520px ---x------- --*/
