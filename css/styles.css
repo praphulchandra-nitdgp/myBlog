@@ -181,7 +181,7 @@ main .site-title .btn:hover{
     main.blog{
         background: url('../assets/postpics/post3.png');
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: center;
         height: 100vh ;
         width: 100%;
         background-size: 65%;
