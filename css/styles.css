@@ -220,7 +220,7 @@ main.post-content{
     margin-bottom: 5rem;
 }
 
-mian .site-content .post-content > .post-image,.post-title{
+main .site-content .post-content > .post-image,.post-title{
     padding:1rem 2rem;
     position:relative;
 
@@ -233,7 +233,7 @@ main .site-content .post-content > .post-image, .post-title{
     left: 20vw;
     border-radius: 3rem;
 }
-mian .site-content > .post-image > div{
+main .site-content > .post-image > div{
     overflow: hidden;
 }
 main .site-content .post-content > .post-image .img{
