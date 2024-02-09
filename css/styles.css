@@ -131,7 +131,7 @@ p{
 
 }
 .nav .nav-items .nav-link:hover a{
-    color: white;
+    color: var(--sky) ;
 }
 .nav .nav-brand a{
  font-size: 1.6rem; 
