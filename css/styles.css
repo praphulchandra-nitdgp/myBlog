@@ -1,10 +1,9 @@
-
 @import url('../css/fonts.css');
 
 
 
 html,body{
-    margin: 0%;
+    margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -39,12 +38,12 @@ ul{
     list-style-type: none;
 }
 h1{
-    font-family: var(--Lexend);
+    font-family: var(--fa-font-solid);
     font-size: 2.5rem;
 }
 
 h2{
-    font-family: var(--Lexend);
+    font-family: var(--fa-font-solid);
 }
 
 h3{
@@ -57,7 +56,7 @@ button.btn{
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
-    font-family: var(--Livvic);
+    font-family: var(--fa-font-solid);
     cursor: pointer;
 }
 span{
@@ -65,6 +64,11 @@ span{
 }
 .container{
     margin: 0 5vw;
+}
+
+.middle2{
+    margin-top: 0;
+    padding-top: 0;
 }
 .text-gray{
     color: var(--text-gray);
@@ -78,8 +82,8 @@ p{
 .nav{
     background: white;
     padding: 0 2rem;
-    height: 0rem;
-    min-height: 7vh;
+    height: 0;
+    min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -88,7 +92,7 @@ p{
 }
 .nav .toggle-collapse{
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 90%;
     cursor: pointer;
     display: none;
@@ -102,6 +106,12 @@ p{
     font-size: 1.4rem;
     color: var(--text-gray);
 }
+.category-list {
+    margin: 0;
+}
+.category{
+    margin: 0;
+}
 .collapse{
     height: 30rem;
 }
@@ -114,11 +124,10 @@ p{
     font-size: 1.1rem;
     position: relative;
     font-family: var(--Josefin);
-    font-size: 1.1rem;
 }
 
 .nav .nav-items .nav-link:hover{
-    background-color: var(--midnight) ;
+    background-color: var(--sky) ;
 
 }
 .nav .nav-items .nav-link:hover a{
@@ -129,17 +138,17 @@ p{
  padding: 1rem 0;
  display: block;
  font-family: var(--Protest);
- font-size: 1.6rem;
 }
 
 .nav .social{
     padding: 1.4rem 0;
 }
 .nav .social i{
-    padding: o .2rem;
+    padding: 0.2rem;
 }
 .nav .social i:hover{
     color: #a1c4cf;
+
 }
 /*------navigationbar---------*/
 
@@ -155,10 +164,15 @@ main .site-title{
     justify-content: center;
 }
 
+.post-image{
+    border-radius: inherit;
+    scale: 75%;
+    width: 75%;
+}
 main .site-title .site-background{
     padding-top: 10rem;
     text-align: center;
-    color: var(--white);
+    color: var(--midnight);
 }
 
 main .site-title h1, h3{
@@ -179,9 +193,7 @@ main .site-title .btn:hover{
 
 /*--------Blog Carousel--------- */
     main.blog{
-        background: url('../assets/postpics/post3.png');
-        background-repeat: no-repeat;
-        background-position: center;
+        background: url('../assets/postpics/post3.png') no-repeat center;
         height: 100vh ;
         width: 100%;
         background-size: 65%;
@@ -197,12 +209,12 @@ main .site-title .btn:hover{
         margin: 3rem 2rem;
         box-shadow: 0 15px 20px rgba(0,0,0, 0.2);
     }
-    main .blog-content .blog-title{
+    main .blog-content.blog-title{
         padding: 2rem 0;
 
     }
     main .blog-content .btn-blog{
-        padding: .7rem 2em;
+        padding: 7rem 2em;
         background: var(--sky);
         margin: .5rem;
     }
@@ -219,17 +231,17 @@ main.post-content{
     width: 100%;
     margin-bottom: 5rem;
 }
-
+.container{
+    margin: 0;
+}
 main .site-content .post-content > .post-image,.post-title{
     padding:1rem 2rem;
     position:relative;
-
 }
 main .site-content .post-content > .post-image, .post-title{
     background: var(--sky);
     padding: 1rem;
-    position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 20vw;
     border-radius: 3rem;
 }
@@ -256,16 +268,17 @@ main .post-content .post-title a{
 
 /*-- -------side bar-------- --*/
 .site-content > .sidebar .category-list{
-    font-family: var(--Josefin) ;
+    font-family: var(--Abel) ;
 }
 .site-content > .sidebar .category-list .list-items{
     background: var(--sky);
-    padding: 4rem 1rem;
-    margin: 8rem 0;
+    padding: 4rem 4rem;
+    margin-top: 5%;
     border-radius: 3rem;
     width: 40%;
     display: flex ;
     justify-content: space-between;
+    height: 20%;
 }
 .site-content > .sidebar .category-list .list-items a{
     color: #100007;
@@ -291,10 +304,12 @@ main .post-content .post-title a{
     margin: 1rem 0;
     background: var(--sky);
 }
+.newsletter{
+    color:white;
+}
 
 .site-content .sidebar .popular-tags{
     padding: 5rem 0;
-
 }
 .site-content .sidebar .popular-tags .tags .tag{
     background: var(--sky);
@@ -302,7 +317,9 @@ main .post-content .post-title a{
     border-radius: 3rem;
     margin: .4rem .6rem;
 }
-
+.popular-tags{
+    color:white;
+}
 
 /*-- -------side bar-------- --*/
 
@@ -315,10 +332,13 @@ footer.footer{
     background: var(--bg-color);
     postion: relative;
 }
+
+.container{
+    background: linear-gradient(to bottom, #bdd2e3, #0B60B0, #000000);
+}
 footer.footer .container{
     display: grid;
-    grid-template-columns:25% 25% 25% 25%; 
-
+    grid-template-columns:25% 25% 25% 25%;
 }
 footer.footer .container > div{
     flex-grow: 1;
@@ -356,7 +376,7 @@ footer.footer .instagram div > img{
 }
 
 footer.footer .follow div i{
-    color: white;
+    color: var(--midnight);
     padding: 0 .4rem;
 }
 
@@ -365,6 +385,9 @@ footer.footer .rights{
     font-family: var(--Josefin);
 }
 
+footer.footer .rights h4 a{
+    color: var(--midnight);
+}
 
 /*-- -----------x--- Footer---x------------ --*/
 
@@ -374,7 +397,7 @@ footer.footer .rights{
     .site-content .post-content > .post-image .post-info{
         left: 2rem !important;
         bottom: 1.2rem !important;
-        border-radius: 0% !important;
+        border-radius: 0 !important;
     }
 
     .site-content .sidebar .popular-post .post-info{
@@ -432,3 +455,8 @@ footer.footer .rights{
 }
 
 /*-- -------x--- Viewport less then or equal to 520px ---x------- --*/
+
+ 
+
+
+
