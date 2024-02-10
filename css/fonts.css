@@ -1,25 +1,25 @@
 /* font-family: abel */
 @font-face {
     font-family: Abel;
-    src: url('../Google Fonts/Abel/Abel-Regular.ttf');
+    src: url(https://fonts.google.com/specimen/Abel?query=abel);
 }
 /* font-family: josefin */
 @font-face {
     font-family: Josefin_Sans;
-    src: url('../Google Fonts/Josefin_Sans/Josefin_Sans-VariableFont-wght.ttf');
+    src: url(https://fonts.google.com/specimen/Josefin+Sans?query=josefin);
 }
 /* font-family: lilita */
 @font-face {
     font-family: Lilita_One;
-    src: url('../Google Fonts/Lilita_One/LilitaOne-Regular.ttf');
+    src: url(https://fonts.google.com/specimen/Lilita+One?query=lilita);
 }
 /* font-family: guerilla */
 @font-face {
     font-family: Protest_Guerilla;
-    src: url('../Google Fonts/Protest_Guerilla/ProtestGuerilla-Regular.ttf');
+    src: url(https://fonts.google.com/specimen/Protest+Guerrilla?query=protest+);
 }
 /* font-family: sansita */
 @font-face {
     font-family: Sansita;
-    src: url('../Google Fonts/Sansita/Sansita-Black.ttf');
+    src: url(https://fonts.google.com/specimen/Sansita?query=sansita);
 }
