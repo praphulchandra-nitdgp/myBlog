@@ -128,11 +128,11 @@ p{
 }
 
 .nav .nav-items .nav-link:hover{
-    background-color: var(--sky) ;
+    background-color: var(--text-gray);
 
 }
 .nav .nav-items .nav-link:hover a{
-    color: var(--sky) ;
+    color: white;
 }
 .nav .nav-brand a{
  font-size: 1.6rem; 
