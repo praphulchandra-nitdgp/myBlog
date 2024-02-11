@@ -16,7 +16,7 @@ html,body{
     --midnight:#052869;
     /*gradient color*/
     --sky: linear-gradient(120deg, #4facfe 0%, #00f2fe 100%);
-
+    --grey: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
     /*   theme font-families    */
     --Abel: 'Abel', sans-serif;
     --Josefin: 'Josefin Sans', sans-serif;
@@ -215,8 +215,8 @@ main .site-title .btn:hover{
 
     }
     main .blog-content .btn-blog{
-        padding: 7rem 2em;
-        background: var(--sky);
+        padding: 5rem 2em;
+        background: var(--grey);
         margin: .5rem;
     }
     main .blog-content span{
