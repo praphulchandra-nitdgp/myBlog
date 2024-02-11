@@ -17,10 +17,10 @@ const responsive = {
 $(document).ready(function (){
 
     $nav = $('.nav');
-    $toggleCollapse = $('toggle-collapse');
+    $toggleCollapse = $('.toggle-collapse');
 
     /** click event on toggle menu */
-    $toggleCollapse.click(function(){
+    $toggleCollapse.click(function (){
         $nav.toggleClass('collapse');
     }) 
     // owl-carousel for blog
