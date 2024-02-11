@@ -13,29 +13,8 @@ const responsive = {
         items: 3
     }
 }
-$(function() {
-  open_panel_count = 0;
-  function update_toggle_button() { 
-    $('#toggle-btn').text((open_panel_count ? "Collapse" : "Expand") + " All")
-  }
-  update_toggle_button(); // Run once on page load to text #toggle-btn
 
-  $('#toggle-btn').click(function() {
-    $('.toggle-collapse').collapse(open_panel_count ? 'hide' : 'show');
-  });
-
-  $('.toggle-collapse').on('shown.bs.collapse', function () {
-    open_panel_count++;
-    update_toggle_button();
-  });
-
-  $('.toggle-collapse').on('hidden.bs.collapse', function () {
-    open_panel_count--;
-    update_toggle_button();
-  });
-});
-
-$(document).ready(function(){
+$(document).ready(function (){
 
     $nav = $('.nav');
     $toggleCollapse = $('toggle-collapse');
