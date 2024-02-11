@@ -402,7 +402,7 @@ footer.footer .rights h4 a{
         border-radius: 0 !important;
     }
     h2{
-        font-size: 2
+        font-size: 2;
 
     .site-content .sidebar .popular-post .post-info{
         display: none !important;
@@ -465,7 +465,6 @@ footer.footer .rights h4 a{
     nav .toggle-collapse{
         width: 80% !important;
     }
-     }
     .h1{
         font-size: 1.7rem;
     }
