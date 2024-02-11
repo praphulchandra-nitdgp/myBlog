@@ -80,7 +80,7 @@ p{
 }
 /* Dark theme */
 .dark-theme {
-  --bg-color: #333;
+  --bg-color: black;
   --text-gray: white;
 }
 
