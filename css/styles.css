@@ -18,11 +18,11 @@ html,body{
     --sky: linear-gradient(120deg, #4facfe 0%, #00f2fe 100%);
 
     /*   theme font-families    */
-    --Abel: 'Abel', cursive;
-    --Josefin: 'Josefin_Sans', cursive;
-    --Lilita: 'Lilita_One', cursive;
-    --Protest: 'Protest_Guerilla', cursive;
-    --sansita: 'sansita', cursive;
+    --Abel: 'Abel', sans-serif;
+    --Josefin: 'Josefin Sans', sans-serif;
+    --Lilita: 'Lilita One', sans-serif;
+    --Protest: 'Protest Guerrilla', sans-serif;
+    --Sansita: 'Sansita', sans-serif;
 }
 /*----------global classes--------*/
 a{
