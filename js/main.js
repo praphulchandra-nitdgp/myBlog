@@ -1,11 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.querySelector(".toggle-collapse");
-    const navItems = document.querySelector(".nav-items");
 
-    toggleButton.addEventListener("click", function() {
-        navItems.classList.toggle("show");
-    });
-});
 const responsive = {
     0: {
         items: 1
@@ -20,6 +13,27 @@ const responsive = {
         items: 3
     }
 }
+$(function() {
+  open_panel_count = 0;
+  function update_toggle_button() { 
+    $('#toggle-btn').text((open_panel_count ? "Collapse" : "Expand") + " All")
+  }
+  update_toggle_button(); // Run once on page load to text #toggle-btn
+
+  $('#toggle-btn').click(function() {
+    $('.toggle-collapse').collapse(open_panel_count ? 'hide' : 'show');
+  });
+
+  $('.toggle-collapse').on('shown.bs.collapse', function () {
+    open_panel_count++;
+    update_toggle_button();
+  });
+
+  $('.toggle-collapse').on('hidden.bs.collapse', function () {
+    open_panel_count--;
+    update_toggle_button();
+  });
+});
 
 $(document).ready(function(){
 
@@ -40,10 +54,4 @@ $(document).ready(function(){
         navText: [$('.owl-nav .owl-nav-prev'), $('.owl-nav .owl-nav-next')],
         responsive: responsive
 });
-
-
-
-
-
-
 });
