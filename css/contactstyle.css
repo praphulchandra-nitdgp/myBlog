@@ -2,8 +2,90 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    
+    /*      theme font-family   */
+     --Josefin: 'Josefin Sans', sans-serif;
+     --Protest: 'Protest Guerrilla', sans-serif;
+/* --------------- navbar ----------------- */
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display:flex;
+    justify-content: flex-end;
+    padding:1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+.category-list {
+    margin: 0;
+}
+.category{
+    margin: 0;
+}
+.collapse{
+    height: 20rem;
+}
+.nav .nav-items{  
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Josefin);
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--text-gray);
+
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+.nav .nav-brand a{
+ font-size: 1.6rem; 
+ padding: 1rem 0;
+ display: block;
+ font-family: var(--Protest);
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+.nav .social i{
+    padding: 0.2rem;
+}
+.nav .social i:hover{
+    color: #a1c4cf;
+
+}
+
+/* -------------x-- navbar --x--------------- */
 body{
-    background: #1f26fa;
+    background: #1f8dfa;
     font-size: 14px;
     font-family: 'Fira Sans', sans-serif;
 }
