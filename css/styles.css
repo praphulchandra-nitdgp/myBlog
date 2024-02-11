@@ -78,6 +78,12 @@ p{
     font-family: var(--Josefin);
     color: var(--text-light);
 }
+/* Dark theme */
+.dark-theme {
+  --bg-color: #333;
+  --text-gray: white;
+}
+
 /*-- ---x-----global classes----x-- --*/
 /*-- ----navigationbar------- --*/
 .nav{
@@ -151,6 +157,7 @@ p{
     color: #a1c4cf;
 
 }
+
 /*------navigationbar---------*/
 
 /*------- site body -------*/
