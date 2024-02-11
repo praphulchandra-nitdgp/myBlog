@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.querySelector(".toggle-collapse");
+    const navItems = document.querySelector(".nav-items");
+
+    toggleButton.addEventListener("click", function() {
+        navItems.classList.toggle("show");
+    });
+});
 const responsive = {
     0: {
         items: 1
