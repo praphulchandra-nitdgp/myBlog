@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./css/all.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Dark theme -->
+    <link rel="stylesheet" href="./css/dark.css">
+    
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@100;200;300&family=Lilita+One&family=Protest+Guerrilla&family=Sansita:wght@400;700;800&display=swap" rel="stylesheet">
 <!-- ----- Owl carousel ------ -->
@@ -290,24 +293,7 @@
         $(".owl-carousel").owlCarousel();
         });
    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const themeToggle = document.getElementById("theme-toggle");
-            const body = document.body;
-
-            themeToggle.addEventListener("click", function() {
-                body.classList.toggle("dark-theme");
-                // Save the user's preference to localStorage
-                const isDarkMode = body.classList.contains("dark-theme");
-                localStorage.setItem("darkMode", isDarkMode);
-            });
-
-            // Check if the user has a preference for dark mode and apply it
-            const isDarkMode = localStorage.getItem("darkMode") === "true";
-            if (isDarkMode) {
-                body.classList.add("dark-theme");
-            }
-        });
-    </script>
+    <!-- dark mode -->
+    <script src="./js/dark.js"></script>
 </body>
 </html>
