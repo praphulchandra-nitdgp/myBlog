@@ -94,6 +94,11 @@ p{
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
+.nav .dark-theme{
+    background: black;
+    text-color: white;
+
+    
 .nav .nav-menu{
     justify-content: space-between;
 }
