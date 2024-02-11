@@ -160,7 +160,7 @@ p{
 main .site-title{
     background: url('../assets/background.jpg');
     background-size: cover;
-    height: 70vh;
+    height: 55vh;
     display: flex;
     justify-content: center;
 }
@@ -435,6 +435,9 @@ footer.footer .rights h4 a{
     }
     .h3{
         font-size: 1.1rem;
+    }
+    .blog-content .btn-blog{
+        height: 20%;
     }
 }
 
