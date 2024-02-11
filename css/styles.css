@@ -158,7 +158,7 @@ p{
 /*-------- Site title --------*/
 
 main .site-title{
-    background: url('../assets/background.jpg');
+    background: url('../assets/background.png');
     background-size: cover;
     height: 55vh;
     display: flex;
