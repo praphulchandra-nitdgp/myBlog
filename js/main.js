@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     /** click event on toggle menu */
     $toggleCollapse.click(function(){
-        $nav.toggleclass('collapse');
+        $nav.toggleClass('collapse');
     }) 
     // owl-carousel for blog
     $('.owl-carousel').owlCarousel({
