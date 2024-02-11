@@ -284,5 +284,24 @@
         $(".owl-carousel").owlCarousel();
         });
    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeToggle = document.getElementById("theme-toggle");
+            const body = document.body;
+
+            themeToggle.addEventListener("click", function() {
+                body.classList.toggle("dark-theme");
+                // Save the user's preference to localStorage
+                const isDarkMode = body.classList.contains("dark-theme");
+                localStorage.setItem("darkMode", isDarkMode);
+            });
+
+            // Check if the user has a preference for dark mode and apply it
+            const isDarkMode = localStorage.getItem("darkMode") === "true";
+            if (isDarkMode) {
+                body.classList.add("dark-theme");
+            }
+        });
+    </script>
 </body>
 </html>
