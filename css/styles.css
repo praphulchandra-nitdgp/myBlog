@@ -217,7 +217,7 @@ main .site-title .btn:hover{
 
     }
     main .blog-content .btn-blog{
-        padding: 5rem 2em;
+        padding: 2rem;
         background: var(--sky);
         margin: .5rem;
     }
