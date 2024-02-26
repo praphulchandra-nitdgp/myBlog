@@ -9,12 +9,13 @@
     /*      theme font-family   */
      --Josefin: 'Josefin Sans', sans-serif;
      --Protest: 'Protest Guerrilla', sans-serif;
+}
 /* --------------- navbar ----------------- */
 .nav{
     background: white;
     padding: 0 2rem;
     height: 0;
-    min-height: 5vh;
+    min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
